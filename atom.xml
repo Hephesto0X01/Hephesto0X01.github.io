@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Hephesto</title>
+  
+  <subtitle>Welcome to Hephesto&#39;s blog</subtitle>
+  <link href="https://hephesto0x01.github.io/atom.xml" rel="self"/>
+  
+  <link href="https://hephesto0x01.github.io/"/>
+  <updated>2025-03-18T11:37:41.651Z</updated>
+  <id>https://hephesto0x01.github.io/</id>
+  
+  <author>
+    <name>Hephesto</name>
+    
+  </author>
+  
+  <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>test</title>
+    <link href="https://hephesto0x01.github.io/2025/03/18/test/"/>
+    <id>https://hephesto0x01.github.io/2025/03/18/test/</id>
+    <published>2025-03-18T11:37:10.000Z</published>
+    <updated>2025-03-18T11:37:41.651Z</updated>
+    
+    <content type="html"><![CDATA[<p>hsjdfhjkshfjk</p>]]></content>
+    
+    
+    <summary type="html">test</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>[GO]设计模式</title>
+    <link href="https://hephesto0x01.github.io/2025/03/09/GO-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    <id>https://hephesto0x01.github.io/2025/03/09/GO-%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</id>
+    <published>2025-03-09T06:17:45.000Z</published>
+    <updated>2025-03-09T06:21:36.931Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://blog.csdn.net/qq_18237141/article/details/130520950?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522915009a2364cbc335e4132d5d4ca40a0%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=915009a2364cbc335e4132d5d4ca40a0&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~baidu_landing_v2~default-6-130520950-null-null.142%5Ev102%5Epc_search_result_base4&utm_term=go%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F&spm=1018.2226.3001.4187">mode</a></p>]]></content>
+    
+    
+    <summary type="html">【转载】go语言设计模式</summary>
+    
+    
+    
+    <category term="GO" scheme="https://hephesto0x01.github.io/categories/GO/"/>
+    
+    
+    <category term="设计模式" scheme="https://hephesto0x01.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>[GO]协程</title>
+    <link href="https://hephesto0x01.github.io/2025/02/24/GO-%E5%8D%8F%E7%A8%8B/"/>
+    <id>https://hephesto0x01.github.io/2025/02/24/GO-%E5%8D%8F%E7%A8%8B/</id>
+    <published>2025-02-24T12:35:24.000Z</published>
+    <updated>2025-02-24T12:40:49.549Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="MPG模型："><a href="#MPG模型：" class="headerlink" title="MPG模型："></a>MPG模型：</h2><p>go语言中的MPG模式是一种特殊的两级线程模型，将CPU，内核线程，用户线程之间的管理，描述为M,P,G三者的关系。</p><ul><li>M：machine。一个M对应一个内核级线程，相当于内核级线程在go中的映射。</li><li>P：processor。go语言代码所需要上下文环境。</li><li>G：goroutine。用户级线程。</li></ul>]]></content>
+    
+    
+    <summary type="html">对goroutine的一些理解</summary>
+    
+    
+    
+    <category term="GO" scheme="https://hephesto0x01.github.io/categories/GO/"/>
+    
+    
+    <category term="并发" scheme="https://hephesto0x01.github.io/tags/%E5%B9%B6%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>[GO]sync包</title>
+    <link href="https://hephesto0x01.github.io/2025/02/23/GO-sync%E5%8C%85/"/>
+    <id>https://hephesto0x01.github.io/2025/02/23/GO-sync%E5%8C%85/</id>
+    <published>2025-02-23T12:36:44.000Z</published>
+    <updated>2025-02-24T12:29:45.908Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="sync包"><a href="#sync包" class="headerlink" title="sync包"></a>sync包</h1><h2 id="sync包工具："><a href="#sync包工具：" class="headerlink" title="sync包工具："></a>sync包工具：</h2><pre><code>1. 互斥锁：Mutex2. 读写锁：RWMutex3. 等待组： WaitGroup4. 并发安全字典：Map5. 单例模式：Once</code></pre><h3 id="Mutex"><a href="#Mutex" class="headerlink" title="Mutex:"></a>Mutex:</h3><ul><li>保证在同一时间只有一个goroutine持有锁</li><li>保证了在这一时间段内只有这以一个goroutine可以访问共享资源,其他goroutine会被堵塞直到锁被释放</li></ul><h3 id="RWMutex："><a href="#RWMutex：" class="headerlink" title="RWMutex："></a>RWMutex：</h3><ul><li>在同一时间只有一个goroutine获得WLock</li><li>在同一时间可以有多个goroutine获得RLock</li><li>在同一时间只能存在写锁hi哦这读锁，即读写锁互斥</li></ul><figure class="highlight go"><table><tr><td class="code"><pre><code class="hljs go"><span class="hljs-keyword">package</span> main<br><br><span class="hljs-keyword">import</span> (<br><span class="hljs-string">&quot;fmt&quot;</span><br><span class="hljs-string">&quot;sync&quot;</span><br><span class="hljs-string">&quot;time&quot;</span><br>)<br><br><span class="hljs-keyword">var</span> p = fmt.Println<br><br><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> &#123;<br>p(<span class="hljs-string">&quot;main func starts&quot;</span>)<br><span class="hljs-keyword">var</span> lock sync.RWMutex<br><span class="hljs-comment">// GOTIME := &quot;2025-1-2 15:04:23&quot;</span><br><br>p(<span class="hljs-string">&quot;start rlock at: &quot;</span>, time.Now())<br><span class="hljs-keyword">for</span> i := <span class="hljs-keyword">range</span> <span class="hljs-number">5</span> &#123;<br><span class="hljs-keyword">go</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(i <span class="hljs-type">int</span>)</span></span> &#123;<br><span class="hljs-keyword">defer</span> lock.RUnlock()<br>lock.RLock()<br>p(<span class="hljs-string">&quot;func&quot;</span>, i, <span class="hljs-string">&quot;gets rlock at: &quot;</span>, time.Now())<br>time.Sleep(time.Second)<br>p(<span class="hljs-string">&quot;func&quot;</span>, i, <span class="hljs-string">&quot;release rlock at: &quot;</span>, time.Now())<br>&#125;(i)<br>&#125;<br>time.Sleep(time.Second / <span class="hljs-number">10</span>)<br><br>p(<span class="hljs-string">&quot;============================================&quot;</span>)<br>p(<span class="hljs-string">&quot;start wlock at:&quot;</span>, time.Now())<br><span class="hljs-keyword">for</span> i := <span class="hljs-keyword">range</span> <span class="hljs-number">5</span> &#123;<br><span class="hljs-keyword">go</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(i <span class="hljs-type">int</span>)</span></span> &#123;<br><span class="hljs-keyword">defer</span> lock.Unlock()<br>lock.Lock()<br>p(<span class="hljs-string">&quot;func&quot;</span>, i, <span class="hljs-string">&quot;gets wlock at: &quot;</span>, time.Now())<br>time.Sleep(time.Second)<br>p(<span class="hljs-string">&quot;func&quot;</span>, i, <span class="hljs-string">&quot;release wlock at: &quot;</span>, time.Now())<br>&#125;(i)<br>&#125;<br>time.Sleep(<span class="hljs-number">10</span> * time.Second)<br><br>p(<span class="hljs-string">&quot;main func is done&quot;</span>)<br>&#125;<br></code></pre></td></tr></table></figure><hr><figure class="highlight plaintext"><table><tr><td class="code"><pre><code class="hljs output">main func starts<br>start rlock at:  2025-02-23 20:31:33.9404441 +0800 CST m=+0.000566301<br>func 4 gets rlock at:  2025-02-23 20:31:33.953563 +0800 CST m=+0.013685201<br>func 1 gets rlock at:  2025-02-23 20:31:33.953563 +0800 CST m=+0.013685201<br>func 0 gets rlock at:  2025-02-23 20:31:33.953563 +0800 CST m=+0.013685201<br>func 3 gets rlock at:  2025-02-23 20:31:33.953563 +0800 CST m=+0.013685201<br>func 2 gets rlock at:  2025-02-23 20:31:33.953563 +0800 CST m=+0.013685201<br>============================================<br>start wlock at: 2025-02-23 20:31:34.0541687 +0800 CST m=+0.114290901<br>func 4 release rlock at:  2025-02-23 20:31:34.9540295 +0800 CST m=+1.014151701<br>func 1 release rlock at:  2025-02-23 20:31:34.9540295 +0800 CST m=+1.014151701<br>func 2 release rlock at:  2025-02-23 20:31:34.954599 +0800 CST m=+1.014721201<br>func 3 release rlock at:  2025-02-23 20:31:34.954599 +0800 CST m=+1.014721201<br>func 0 release rlock at:  2025-02-23 20:31:34.954599 +0800 CST m=+1.014721201<br>func 4 gets wlock at:  2025-02-23 20:31:34.9555688 +0800 CST m=+1.015691001<br>func 4 release wlock at:  2025-02-23 20:31:35.9565869 +0800 CST m=+2.016709101<br>func 0 gets wlock at:  2025-02-23 20:31:35.956899 +0800 CST m=+2.017021201<br>func 0 release wlock at:  2025-02-23 20:31:36.957694 +0800 CST m=+3.017816201<br>func 1 gets wlock at:  2025-02-23 20:31:36.9583138 +0800 CST m=+3.018436001<br>func 1 release wlock at:  2025-02-23 20:31:37.9589584 +0800 CST m=+4.019080601<br>func 2 gets wlock at:  2025-02-23 20:31:37.9596494 +0800 CST m=+4.019771601<br>func 2 release wlock at:  2025-02-23 20:31:38.9608447 +0800 CST m=+5.020966901<br>func 3 gets wlock at:  2025-02-23 20:31:38.961154 +0800 CST m=+5.021276201<br>func 3 release wlock at:  2025-02-23 20:31:39.96198 +0800 CST m=+6.022102201<br>main func is done<br></code></pre></td></tr></table></figure><h3 id="Map"><a href="#Map" class="headerlink" title="Map:"></a>Map:</h3><ul><li>go原生中的map不是并发安全的，当多个goroutine同时往map中添加数据时，可能会导致部分数据丢失</li><li>在同一个Map中可以存储多个不同类型的KV对</li></ul><p><strong>map中的方法：</strong></p><ol><li><p>func  (m *Map) <strong>Load</strong>(key any)(value any, ok bool)</p><p>由k获得value（相当于get）</p></li><li><p>func (m *Map) <strong>Store</strong>(key, value any)</p><p>存储（set）</p></li><li><p>func (m *Map)<strong>LoadOrStore</strong>(key, value any) (actual any, loaded bool)</p><p>如果key存在，返回对应的value，否则存储</p></li><li><p>func (m *Map) <strong>Delete</strong>(key any)</p><p>删除一个key</p></li><li><p>func (m *Map) <strong>Range</strong>(f func(key, value any),bool)</p><p>无序遍历map</p></li></ol><ul><li>参数 f 是一个回调函数，它接收两个 interface{} 类型的参数 key 和 value，分别表示当前遍历到的键和值。</li><li>回调函数返回一个 bool 类型的值，如果返回 true，则继续遍历下一个键值对；如果返回 false，则停止遍历。</li></ul><figure class="highlight go"><table><tr><td class="code"><pre><code class="hljs go"><span class="hljs-keyword">package</span> main<br><br><span class="hljs-keyword">import</span> (<br><span class="hljs-string">&quot;fmt&quot;</span><br><span class="hljs-string">&quot;sync&quot;</span><br>)<br><br><span class="hljs-keyword">var</span> p = fmt.Println<br><br><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> &#123;<br><span class="hljs-keyword">var</span> dict sync.Map<br><span class="hljs-keyword">var</span> wg sync.WaitGroup<br><br><span class="hljs-keyword">for</span> i := <span class="hljs-keyword">range</span> <span class="hljs-number">10</span> &#123;<br>wg.Add(<span class="hljs-number">1</span>)<br><span class="hljs-keyword">go</span> <span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(i <span class="hljs-type">int</span>)</span></span> &#123;<br><span class="hljs-keyword">defer</span> wg.Done()<br>dict.Store(i, fmt.Sprintf(<span class="hljs-string">&quot;#stored %d#&quot;</span>, i))<br><br>&#125;(i)<br>&#125;<br>wg.Wait()<br>v, ok := dict.Load(<span class="hljs-number">1</span>)<br>p(v, ok) <span class="hljs-comment">//#stored 1# true</span><br><br>dict.Store(<span class="hljs-number">100</span>, <span class="hljs-string">&quot;#test100#&quot;</span>)<br><br>dict.LoadOrStore(<span class="hljs-number">10</span>, <span class="hljs-string">&quot;#test#&quot;</span>)<br>p(dict.Load(<span class="hljs-number">10</span>)) <span class="hljs-comment">//#test# true</span><br><br>v, loaded := dict.LoadAndDelete(<span class="hljs-number">9</span>)<br>p(v, loaded)    <span class="hljs-comment">//#stored 9# true</span><br>p(dict.Load(<span class="hljs-number">9</span>)) <span class="hljs-comment">//&lt;nil&gt; false</span><br><br>p(<span class="hljs-string">&quot;===========================================&quot;</span>)<br>dict.Range(<span class="hljs-function"><span class="hljs-keyword">func</span><span class="hljs-params">(key, value any)</span></span> <span class="hljs-type">bool</span> &#123;<br>k := key.(<span class="hljs-type">int</span>)<br>v := value.(<span class="hljs-type">string</span>)<br>p(<span class="hljs-string">&quot;Key: %s, Value: %d\n&quot;</span>, k, v)<br><span class="hljs-keyword">return</span> <span class="hljs-literal">true</span><br>&#125;)<br>&#125;<br><br></code></pre></td></tr></table></figure>]]></content>
+    
+    
+    <summary type="html">关于sync以及并发编程的笔记</summary>
+    
+    
+    
+    <category term="GO" scheme="https://hephesto0x01.github.io/categories/GO/"/>
+    
+    
+    <category term="并发" scheme="https://hephesto0x01.github.io/tags/%E5%B9%B6%E5%8F%91/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>[AI]学习路径</title>
+    <link href="https://hephesto0x01.github.io/2025/02/03/AI-%E5%AD%A6%E4%B9%A0%E8%B7%AF%E5%BE%84/"/>
+    <id>https://hephesto0x01.github.io/2025/02/03/AI-%E5%AD%A6%E4%B9%A0%E8%B7%AF%E5%BE%84/</id>
+    <published>2025-02-03T08:49:38.000Z</published>
+    <updated>2025-02-03T08:51:31.293Z</updated>
+    
+    <content type="html"><![CDATA[<p><a href="https://blog.csdn.net/Antai_ZHU/article/details/121540940?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522bdbcdfa210f48b0d55fbca7ec63889fb%2522%252C%2522scm%2522%253A%252220140713.130102334..%2522%257D&request_id=bdbcdfa210f48b0d55fbca7ec63889fb&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-1-121540940-null-null.142%5Ev101%5Epc_search_result_base4&utm_term=%E4%BA%BA%E5%B7%A5%E6%99%BA%E8%83%BD&spm=1018.2226.3001.4187">STEP</a></p>]]></content>
+    
+    
+    <summary type="html">人工智能的学习路径</summary>
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>[GO]make与new</title>
+    <link href="https://hephesto0x01.github.io/2025/02/03/GO-make%E4%B8%8Enew/"/>
+    <id>https://hephesto0x01.github.io/2025/02/03/GO-make%E4%B8%8Enew/</id>
+    <published>2025-02-03T08:02:10.000Z</published>
+    <updated>2025-02-25T08:37:55.890Z</updated>
+    
+    
+    <summary type="html">关键字var，make与new的用法与区别</summary>
+    
+    
+    
+    <category term="GO" scheme="https://hephesto0x01.github.io/categories/GO/"/>
+    
+    
+    <category term="GO" scheme="https://hephesto0x01.github.io/tags/GO/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>[GO]深拷贝与浅拷贝</title>
+    <link href="https://hephesto0x01.github.io/2025/02/03/GO-%E6%B7%B1%E6%8B%B7%E8%B4%9D%E4%B8%8E%E6%B5%85%E6%8B%B7%E8%B4%9D/"/>
+    <id>https://hephesto0x01.github.io/2025/02/03/GO-%E6%B7%B1%E6%8B%B7%E8%B4%9D%E4%B8%8E%E6%B5%85%E6%8B%B7%E8%B4%9D/</id>
+    <published>2025-02-03T07:05:31.000Z</published>
+    <updated>2025-02-03T08:39:27.996Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="深浅拷贝："><a href="#深浅拷贝：" class="headerlink" title="深浅拷贝："></a>深浅拷贝：</h2><h4 id="在-go-语言中-值类型-赋值都是-深拷贝，引用类型-一般都是-浅拷贝。"><a href="#在-go-语言中-值类型-赋值都是-深拷贝，引用类型-一般都是-浅拷贝。" class="headerlink" title="在 go 语言中 值类型 赋值都是 深拷贝，引用类型 一般都是 浅拷贝。"></a>在 go 语言中 <strong>值类型</strong> 赋值都是 <strong>深拷贝</strong>，<strong>引用类型</strong> 一般都是 <strong>浅拷贝</strong>。</h4><hr><h4 id="深拷贝：两者结果互不影响"><a href="#深拷贝：两者结果互不影响" class="headerlink" title="深拷贝：两者结果互不影响"></a>深拷贝：两者结果互不影响</h4><h4 id="浅拷贝：-两者结果相互影响，改变其中一个，另一个他跟着发生改变"><a href="#浅拷贝：-两者结果相互影响，改变其中一个，另一个他跟着发生改变" class="headerlink" title="浅拷贝： 两者结果相互影响，改变其中一个，另一个他跟着发生改变"></a>浅拷贝： 两者结果相互影响，改变其中一个，另一个他跟着发生改变</h4><hr><h3 id="深拷贝："><a href="#深拷贝：" class="headerlink" title="深拷贝："></a>深拷贝：</h3><p>深拷贝会递归地复制对象及其所有嵌套的引用类型字段，创建一个完全独立的新对象，新对象和原对象不共享任何底层数据。对新对象的任何修改都不会影响原对象，反之亦然。</p><figure class="highlight go"><table><tr><td class="code"><pre><code class="hljs go"><span class="hljs-keyword">package</span> main<br><br><span class="hljs-keyword">import</span> (<br><span class="hljs-string">&quot;fmt&quot;</span><br>)<br><br><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> &#123;<br><span class="hljs-keyword">var</span> a = <span class="hljs-number">123</span><br>b := a<span class="hljs-comment">//值的拷贝，深拷贝</span><br>fmt.Println(a, b)<span class="hljs-comment">//123 123</span><br>a = <span class="hljs-number">456</span><br>fmt.Println(a, b)<span class="hljs-comment">// 456 123</span><br>&#125;<br></code></pre></td></tr></table></figure><h3 id="浅拷贝："><a href="#浅拷贝：" class="headerlink" title="浅拷贝："></a>浅拷贝：</h3><p>浅拷贝只复制对象本身以及对象中值类型的字段，但对于引用类型的字段（如切片、映射、指针等），浅拷贝只是复制引用，而不是复制引用指向的实际数据。</p><p>如下，a、b 两个 slice 指向同一个内存地址，slice 拷贝是浅拷贝。本质是因为 slice 属于 Go 的引用类型。</p><figure class="highlight go"><table><tr><td class="code"><pre><code class="hljs go"><span class="hljs-keyword">package</span> main<br><br><span class="hljs-keyword">import</span> (<br><span class="hljs-string">&quot;fmt&quot;</span><br>)<br><br><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> &#123;<br>a := []<span class="hljs-type">int</span>&#123;<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>&#125;<br>b := a <span class="hljs-comment">//地址的拷贝，浅拷贝</span><br>fmt.Println(a, b)<span class="hljs-comment">// 1 2 3  1 2 3</span><br><br>a[<span class="hljs-number">0</span>] = <span class="hljs-number">1000</span><br>fmt.Println(a, b)<span class="hljs-comment">// 1000 2 3  1000 2 3</span><br><br>b[<span class="hljs-number">2</span>] = <span class="hljs-number">4000</span><br>fmt.Println(a, b)<span class="hljs-comment">// 1000 2 4000  1000 2 4000</span><br>&#125;<br></code></pre></td></tr></table></figure><h2 id="总结："><a href="#总结：" class="headerlink" title="总结："></a>总结：</h2><p>使用  <strong>:&#x3D;</strong>  进行拷贝时所产生的深浅拷贝问题取决于被拷贝数据的数据类型（值类型，引用类型）</p><ul><li><p><strong>值类型：深拷贝</strong></p><p>​    <strong>值类型：</strong> int、float、bool 和 string ，除此之外，数组和结构体这两个聚合类型也是<strong>值类型</strong>。</p></li><li><p><strong>引用类型：浅拷贝</strong></p></li></ul><p>​ **引用类型：**指针、切片、map、函数、channel。</p>]]></content>
+    
+    
+    <summary type="html">深拷贝会拷贝数据（两变量存储地址不同，拷贝结束互不影响）。而浅拷贝只会拷贝内存的地址（即使拷贝结束，还是互相影响），所以就会出现，像 slice 那样修改底层数组的值，slice 的值也跟着改动。</summary>
+    
+    
+    
+    <category term="GO" scheme="https://hephesto0x01.github.io/categories/GO/"/>
+    
+    
+    <category term="GO" scheme="https://hephesto0x01.github.io/tags/GO/"/>
+    
+    <category term="杂谈" scheme="https://hephesto0x01.github.io/tags/%E6%9D%82%E8%B0%88/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>[GO]&quot;...&quot;的用法</title>
+    <link href="https://hephesto0x01.github.io/2025/02/03/GO-%E7%9A%84%E7%94%A8%E6%B3%95/"/>
+    <id>https://hephesto0x01.github.io/2025/02/03/GO-%E7%9A%84%E7%94%A8%E6%B3%95/</id>
+    <published>2025-02-03T06:43:00.000Z</published>
+    <updated>2025-02-03T08:35:10.433Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="1-在定义数组-…-时的数组容量处的…表示由编译器自动计算数组元素大小"><a href="#1-在定义数组-…-时的数组容量处的…表示由编译器自动计算数组元素大小" class="headerlink" title="1.在定义数组[…]时的数组容量处的…表示由编译器自动计算数组元素大小"></a>1.在定义数组[…]时的数组容量处的…表示由编译器自动计算数组元素大小</h2><figure class="highlight go"><table><tr><td class="code"><pre><code class="hljs go"><span class="hljs-comment">// 数组定义 这个是手动指定数组大小</span><br>arr1 := [<span class="hljs-number">2</span>]<span class="hljs-type">string</span>&#123;<span class="hljs-string">&quot;Hello&quot;</span>, <span class="hljs-string">&quot; World&quot;</span>&#125;<br><span class="hljs-comment">// 由编译器自动计算数组元素，这个和上面的效果一样</span><br>arr2 := [...]<span class="hljs-type">string</span>&#123;<span class="hljs-string">&quot;Hello&quot;</span>, <span class="hljs-string">&quot; World&quot;</span>&#125;<br></code></pre></td></tr></table></figure><h2 id="2-用在append函数的第二个参数后面时，append-a-b…-表示增加b中所有的数据到a中-append函数原型-func-append-s-T-x-…T-T"><a href="#2-用在append函数的第二个参数后面时，append-a-b…-表示增加b中所有的数据到a中-append函数原型-func-append-s-T-x-…T-T" class="headerlink" title="2. 用在append函数的第二个参数后面时，append(a, b…) 表示增加b中所有的数据到a中,append函数原型 func append(s []T, x …T) []T"></a>2. 用在append函数的第二个参数后面时，append(a, b…) 表示增加b中所有的数据到a中,append函数原型 func append(s []T, x …T) []T</h2><figure class="highlight go"><table><tr><td class="code"><pre><code class="hljs go">a := []<span class="hljs-type">string</span>&#123;<span class="hljs-string">&quot;John&quot;</span>, <span class="hljs-string">&quot;Paul&quot;</span>&#125;<br>b := []<span class="hljs-type">string</span>&#123;<span class="hljs-string">&quot;George&quot;</span>, <span class="hljs-string">&quot;Ringo&quot;</span>, <span class="hljs-string">&quot;Pete&quot;</span>&#125;<br>a = <span class="hljs-built_in">append</span>(a, b...) <span class="hljs-comment">// equivalent to &quot;append(a, b[0], b[1], b[2])&quot;</span><br>fmt.Println(a)<span class="hljs-comment">//[John Paul George Ringo Pete]</span><br></code></pre></td></tr></table></figure><h2 id="3-用在函数形参中时表示可变参数"><a href="#3-用在函数形参中时表示可变参数" class="headerlink" title="3. 用在函数形参中时表示可变参数"></a>3. 用在函数形参中时表示可变参数</h2><figure class="highlight go"><table><tr><td class="code"><pre><code class="hljs go"><span class="hljs-keyword">package</span> main<br> <br><span class="hljs-keyword">import</span> (<br><span class="hljs-string">&quot;fmt&quot;</span><br><span class="hljs-string">&quot;strings&quot;</span><br>)<br><span class="hljs-comment">// 可变参数函数</span><br><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">Fullname</span><span class="hljs-params">(names ...<span class="hljs-type">string</span>)</span></span> <span class="hljs-type">string</span> &#123;<br>  <span class="hljs-keyword">return</span> strings.Join(names, <span class="hljs-string">&quot; &quot;</span>)<br>&#125;<br><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> &#123;<br>fn1 := Fullname(<span class="hljs-string">&quot;Tekin&quot;</span>, <span class="hljs-string">&quot;Tian&quot;</span>)<br>fmt.Println(<span class="hljs-string">&quot;fn1=&quot;</span>, fn1) <span class="hljs-comment">// fn1= Tekin Tian</span><br> <br> <br>fn2 :=Fullname(<span class="hljs-string">&quot;Tekin&quot;</span>)<br>fmt.Println(<span class="hljs-string">&quot;fn2=&quot;</span>, fn2) <span class="hljs-comment">// fn2= Tekin</span><br> <br>fn3 :=Fullname()<br>fmt.Println(<span class="hljs-string">&quot;fn3=&quot;</span>, fn3) <span class="hljs-comment">// fn3=</span><br>&#125;<br></code></pre></td></tr></table></figure><h2 id="4-用在带有可变参数的函数的二次封装时再次调用函数时表示解构参数"><a href="#4-用在带有可变参数的函数的二次封装时再次调用函数时表示解构参数" class="headerlink" title="4. 用在带有可变参数的函数的二次封装时再次调用函数时表示解构参数"></a>4. 用在带有可变参数的函数的二次封装时再次调用函数时表示解构参数</h2><figure class="highlight go"><table><tr><td class="code"><pre><code class="hljs go"><span class="hljs-keyword">package</span> main<br><br><span class="hljs-keyword">import</span> <span class="hljs-string">&quot;fmt&quot;</span><br><br><span class="hljs-comment">// sum 函数接受可变数量的 int 类型参数</span><br><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">sum</span><span class="hljs-params">(nums ...<span class="hljs-type">int</span>)</span></span> <span class="hljs-type">int</span> &#123;<br>    total := <span class="hljs-number">0</span><br>    <span class="hljs-keyword">for</span> _, num := <span class="hljs-keyword">range</span> nums &#123;<br>        total += num<br>    &#125;<br>    <span class="hljs-keyword">return</span> total<br>&#125;<br><br><span class="hljs-comment">// sumWrapper 是对 sum 函数的二次封装</span><br><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">sumWrapper</span><span class="hljs-params">(nums ...<span class="hljs-type">int</span>)</span></span> <span class="hljs-type">int</span> &#123;<br>    <span class="hljs-comment">// 对传入的 nums 参数进行处理，这里简单地直接调用 sum 函数</span><br>    <span class="hljs-keyword">return</span> sum(nums...)<br>&#125;<br><br><span class="hljs-function"><span class="hljs-keyword">func</span> <span class="hljs-title">main</span><span class="hljs-params">()</span></span> &#123;<br>    result := sumWrapper(<span class="hljs-number">1</span>, <span class="hljs-number">2</span>, <span class="hljs-number">3</span>, <span class="hljs-number">4</span>)<br>    fmt.Println(result) <span class="hljs-comment">// 输出 10</span><br>&#125;<br></code></pre></td></tr></table></figure><ul><li>… 解构参数时，要求传递的必须是切片类型。</li></ul>]]></content>
+    
+    
+    <summary type="html">在go语言中&quot;...&quot;用法在不同的地方有不同的意义</summary>
+    
+    
+    
+    <category term="GO" scheme="https://hephesto0x01.github.io/categories/GO/"/>
+    
+    
+    <category term="GO" scheme="https://hephesto0x01.github.io/tags/GO/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="https://hephesto0x01.github.io/2025/01/29/hello-world/"/>
+    <id>https://hephesto0x01.github.io/2025/01/29/hello-world/</id>
+    <published>2025-01-29T13:55:09.355Z</published>
+    <updated>2025-02-03T08:35:38.901Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo new <span class="hljs-string">&quot;My New Post&quot;</span><br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo server<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo generate<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="code"><pre><code class="hljs bash">$ hexo deploy<br></code></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+    
+    
+    <summary type="html">hexo guidance</summary>
+    
+    
+    
+    
+  </entry>
+  
+</feed>

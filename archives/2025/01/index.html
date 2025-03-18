@@ -1,31 +1,309 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="format-detection" content="telephone=no"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-status-bar-style" content="black"><link rel="icon" href="/images/icons/favicon-16x16.png?v=2.8.0" type="image/png" sizes="16x16"><link rel="icon" href="/images/icons/favicon-32x32.png?v=2.8.0" type="image/png" sizes="32x32"><meta property="og:type" content="website">
-<meta property="og:title" content="Hephesto">
-<meta property="og:url" content="https://hephesto0x01.github.io/archives/2025/01/index.html">
-<meta property="og:site_name" content="Hephesto">
-<meta property="og:locale" content="en_US">
-<meta property="article:author" content="Hephesto">
-<meta name="twitter:card" content="summary"><title>Archive | Hephesto</title><link ref="canonical" href="https://hephesto0x01.github.io/archives/2025/01/index.html"><link rel="dns-prefetch" href="https://cdn.jsdelivr.net"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.12.1/css/all.min.css" type="text/css"><link rel="stylesheet" href="/css/index.css?v=2.8.0"><link rel="stylesheet" href="css/custom.css"><script>var Stun = window.Stun || {};
-var CONFIG = {
-  root: '/',
-  algolia: undefined,
-  assistSearch: undefined,
-  fontIcon: {"prompt":{"success":"fas fa-check-circle","info":"fas fa-arrow-circle-right","warning":"fas fa-exclamation-circle","error":"fas fa-times-circle"},"copyBtn":"fas fa-copy"},
-  sidebar: {"offsetTop":"20px","tocMaxDepth":6},
-  header: {"enable":true,"showOnPost":true,"scrollDownIcon":false},
-  postWidget: {"endText":true},
-  nightMode: {"enable":true},
-  back2top: {"enable":true},
-  codeblock: {"style":"default","highlight":"light","wordWrap":false},
-  reward: false,
-  fancybox: false,
-  zoomImage: {"gapAside":"20px"},
-  galleryWaterfall: undefined,
-  lazyload: false,
-  pjax: undefined,
-  externalLink: {"icon":{"enable":true,"name":"fas fa-external-link-alt"}},
-  shortcuts: undefined,
-  prompt: {"copyButton":"Copy","copySuccess":"Copy Success","copyError":"Copy Error"},
-  sourcePath: {"js":"js","css":"css","images":"images"},
-};
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hephesto - Archives</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/tailwind.css">
+    
+<header class="bg-black text-hacker-white py-4 font-dos font-extrabold">
+    <div class="container mx-auto flex items-center justify-between space-x-8">
+    
+      <h1 class="text-2xl font-bold ml-[100px] md:ml-0 animate-pulse text-hacker-color1 md:mr-[20%]">
+        <a href="/" class="hover:text-white transition-colors select-none">
+          Hephesto
+        </a>
+      </h1>
+  
+    <!-- 大屏幕 -->
+      <nav class="hidden md:block">
+        <ul class="flex space-x-6">
+          
+            <li>
+              <a href="/" class="select-none text-lg hover:text-hacker-color1 transition-all hover:underline decoration-wavy duration-300 text-hacker-color3">
+                Home
+              </a>
+            </li>
+          
+            <li>
+              <a href="/archives" class="select-none text-lg hover:text-hacker-color1 transition-all hover:underline decoration-wavy duration-300 text-hacker-color3">
+                Archives
+              </a>
+            </li>
+          
+            <li>
+              <a href="/categories" class="select-none text-lg hover:text-hacker-color1 transition-all hover:underline decoration-wavy duration-300 text-hacker-color3">
+                Categories
+              </a>
+            </li>
+          
+            <li>
+              <a href="/tags" class="select-none text-lg hover:text-hacker-color1 transition-all hover:underline decoration-wavy duration-300 text-hacker-color3">
+                Tags
+              </a>
+            </li>
+          
+            <li>
+              <a href="/about" class="select-none text-lg hover:text-hacker-color1 transition-all hover:underline decoration-wavy duration-300 text-hacker-color3">
+                About
+              </a>
+            </li>
+          
+            <li>
+              <a href="/rss.xml" class="select-none text-lg hover:text-hacker-color1 transition-all hover:underline decoration-wavy duration-300 text-hacker-color3">
+                RSS
+              </a>
+            </li>
+          
+        </ul>
+      </nav>
+  
+      <!-- 小屏幕 -->
+      <button id="menu-toggle" class="block md:hidden text-white focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+  
+    <!-- 折叠菜单 -->
+    <nav id="mobile-menu" class="hidden bg-black">
+      <ul class="space-y-2 py-4 px-6">
+        
+          <li>
+            <a href="/" class="block text-white hover:text-hacker-color1 transition-colors">
+              Home
+            </a>
+          </li>
+        
+          <li>
+            <a href="/archives" class="block text-white hover:text-hacker-color1 transition-colors">
+              Archives
+            </a>
+          </li>
+        
+          <li>
+            <a href="/categories" class="block text-white hover:text-hacker-color1 transition-colors">
+              Categories
+            </a>
+          </li>
+        
+          <li>
+            <a href="/tags" class="block text-white hover:text-hacker-color1 transition-colors">
+              Tags
+            </a>
+          </li>
+        
+          <li>
+            <a href="/about" class="block text-white hover:text-hacker-color1 transition-colors">
+              About
+            </a>
+          </li>
+        
+          <li>
+            <a href="/rss.xml" class="block text-white hover:text-hacker-color1 transition-colors">
+              RSS
+            </a>
+          </li>
+        
+      </ul>
+    </nav>
+  
+    <!-- RSS Link -->
+    <link rel="alternate" type="application/rss+xml" title=" RSS" href="/rss.xml" />
+  </header>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lunr.js/2.3.9/lunr.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="/js/search.js"></script>
+  <script>
+        document.addEventListener("DOMContentLoaded", () => {
+    const menuToggle = document.getElementById("menu-toggle");
+    const mobileMenu = document.getElementById("mobile-menu");
 
-window.CONFIG = CONFIG;</script><meta name="generator" content="Hexo 7.3.0"></head><body><div class="container" id="container"><header class="header" id="header"><div class="header-inner"><nav class="header-nav header-nav--fixed"><div class="header-nav-inner"><div class="header-nav-menubtn"><i class="fas fa-bars"></i></div><div class="header-nav-menu"><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/"><span class="header-nav-menu-item__icon"><i class="fas fa-home"></i></span><span class="header-nav-menu-item__text">Home</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/archives/"><span class="header-nav-menu-item__icon"><i class="fas fa-folder-open"></i></span><span class="header-nav-menu-item__text">Archives</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/categories/"><span class="header-nav-menu-item__icon"><i class="fas fa-layer-group"></i></span><span class="header-nav-menu-item__text">Categories</span></a></div><div class="header-nav-menu-item"><a class="header-nav-menu-item__link" href="/tags/"><span class="header-nav-menu-item__icon"><i class="fas fa-tags"></i></span><span class="header-nav-menu-item__text">Tags</span></a></div></div><div class="header-nav-mode"><div class="mode"><div class="mode-track"><span class="mode-track-moon"></span><span class="mode-track-sun"></span></div><div class="mode-thumb"></div></div></div></div></nav><div class="header-banner"><div class="header-banner-info"><div class="header-banner-info__title">Hephesto's Blog</div><div class="header-banner-info__subtitle">Innovating with Code, Sharing for Growth</div></div></div></div></header><main class="main" id="main"><div class="main-inner"><div class="content-wrap" id="content-wrap"><div class="content" id="content"><div class="archive"><div class="archive-total">Total 4 Articles, Go on!</div><section class="timeline"><time class="timeline-item timeline-item--year">2025</time><article class="timeline-item"><time class="timeline-item__time">02-03</time><h2 class="timeline-item__title"><a class="timeline-item__link" href="/2025/02/03/GO-make%E4%B8%8Enew/">[GO]make与new</a></h2></article><article class="timeline-item"><time class="timeline-item__time">02-03</time><h2 class="timeline-item__title"><a class="timeline-item__link" href="/2025/02/03/GO-%E6%B7%B1%E6%8B%B7%E8%B4%9D%E4%B8%8E%E6%B5%85%E6%8B%B7%E8%B4%9D/">[GO]深拷贝与浅拷贝</a></h2></article><article class="timeline-item"><time class="timeline-item__time">02-03</time><h2 class="timeline-item__title"><a class="timeline-item__link" href="/2025/02/03/GO-%E7%9A%84%E7%94%A8%E6%B3%95/">[GO]&quot;...&quot;的用法</a></h2></article><article class="timeline-item"><time class="timeline-item__time">01-29</time><h2 class="timeline-item__title"><a class="timeline-item__link" href="/2025/01/29/hello-world/">Hello World</a></h2></article></section></div></div></div><div class="sidebar-wrap" id="sidebar-wrap"><aside class="sidebar" id="sidebar"><section class="sidebar-toc hide"></section><!-- ov = overview--><section class="sidebar-ov"><div class="sidebar-ov-author"><div class="sidebar-ov-author__avatar"><img class="sidebar-ov-author__avatar_img" src="/images/icons/stun-logo.svg" alt="avatar"></div><p class="sidebar-ov-author__text">Hephesto</p></div><div class="sidebar-ov-state"><a class="sidebar-ov-state-item sidebar-ov-state-item--posts" href="/archives/"><div class="sidebar-ov-state-item__count">4</div><div class="sidebar-ov-state-item__name">Archives</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--categories" href="/categories/"><div class="sidebar-ov-state-item__count">1</div><div class="sidebar-ov-state-item__name">Categories</div></a><a class="sidebar-ov-state-item sidebar-ov-state-item--tags" href="/tags/"><div class="sidebar-ov-state-item__count">2</div><div class="sidebar-ov-state-item__name">Tags</div></a></div><div class="sidebar-ov-cc"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener" data-popover="Creative Commons" data-popover-pos="up"><img src="/images/cc-by-nc-sa.svg"></a></div></section></aside></div><div class="clearfix"></div></div></main><footer class="footer" id="footer"><div class="footer-inner"><div><span>Copyright © 2025</span><span class="footer__icon"><i class="fas fa-heart"></i></span><span>Hephesto</span></div><div><span>Powered by <a href="http://hexo.io/" title="Hexo" target="_blank" rel="noopener">Hexo</a></span><span> v7.3.0</span><span class="footer__devider">|</span><span>Theme - <a href="https://github.com/liuyib/hexo-theme-stun/" title="Stun" target="_blank" rel="noopener">Stun</a></span><span> v2.8.0</span></div></div></footer><div class="loading-bar" id="loading-bar"><div class="loading-bar__progress"></div></div><div class="back2top" id="back2top"><span class="back2top__icon"><i class="fas fa-rocket"></i></span></div></div><script src="https://cdn.jsdelivr.net/npm/jquery@v3.4.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.min.js"></script><script src="https://cdn.jsdelivr.net/npm/velocity-animate@1.5.2/velocity.ui.min.js"></script><script src="/js/utils.js?v=2.8.0"></script><script src="/js/stun-boot.js?v=2.8.0"></script><script src="/js/scroll.js?v=2.8.0"></script><script src="/js/header.js?v=2.8.0"></script><script src="/js/sidebar.js?v=2.8.0"></script></body></html>
+    menuToggle.addEventListener("click", () => {
+        if (mobileMenu.classList.contains("hidden")) {
+        mobileMenu.classList.remove("hidden");
+        } else {
+        mobileMenu.classList.add("hidden");
+        }
+    });
+    });
+
+  </script>
+  
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+<body class="bg-black container mx-auto">
+    <h1 class="text-4xl text-hacker-color1 font-bold font-dos">Archives</h1>
+    <hr class="w-full border-t-2 border-line-color border-dashed">
+    <div class="container mx-auto flex bg-black min-h-screen">
+        <div class="w-full">
+            
+
+            <div class="archive-list text-lg mt-8">
+            
+                <section class="mb-6">
+                <h2 class="text-2xl font-bold text-hacker-color1 mb-4">2025</h2>
+                <ul class="ml-4">
+                    
+                    <li class="mb-2">
+                        <span class="text-hacker-color3 ">2025-01-29 >> </span>
+                        <a class="text-hacker-color1 hover:underline" href="/2025/01/29/hello-world/">Hello World</a>
+                    </li>
+                    
+                </ul>
+                </section>
+            
+            </div>
+
+
+        </div>
+        
+    <div class="w-1/3 hidden md:block space-y-4 mt-8">
+      
+        
+          <!-- 搜索框 -->
+          <input type="text" id="search-input" placeholder="Search..." class="w-full p-2.5 text-lg mb-5 border-2 border-line-color rounded bg-black text-white placeholder-gray-400"/>
+          <div id="search-results"></div>
+        
+  
+        
+  
+        
+  
+        
+  
+        
+  
+      
+        
+  
+        
+          <!-- 公告栏 -->
+          <div class=" text-white p-4 rounded-md border-2 border-dashed border-line-color mb-4">
+            <h3 class="font-bold text-lg text-hacker-color1">Notice</h3>
+            <p class="mt-4">The blog is under optimization. Stay tuned for more content!</p>
+          </div>
+        
+  
+        
+  
+        
+  
+        
+  
+      
+        
+  
+        
+  
+        
+          <!-- 分类部分 -->
+          <h3 class="text-hacker-color1 font-bold text-lg">Categories</h3>
+          <div>
+            
+              <a href="https://hephesto0x01.github.io/categories/GO/" class="text-hacker-color3 hover:text-white">
+                GO (6)
+              </a>
+              <br />
+            
+            
+          </div>
+          <hr class="w-full border-t-2 border-line-color border-dashed">
+        
+  
+        
+  
+        
+  
+      
+        
+  
+        
+  
+        
+  
+        
+          <!-- 标签部分 -->
+          <h3 class="text-hacker-color1 font-bold text-lg">Tags</h3>
+          <div class="flex flex-wrap justify-start items-center">
+            
+              <a href="https://hephesto0x01.github.io/tags/GO/" class="text-hacker-color3 hover:bg-hacker-hover-color hover:text-white block border border-hacker-color3 hover:border-dotted rounded-sm py-0.5 px-2 mr-4 mb-2">
+                GO <sub>3</sub>
+              </a>
+              <br />
+            
+              <a href="https://hephesto0x01.github.io/tags/并发/" class="text-hacker-color3 hover:bg-hacker-hover-color hover:text-white block border border-hacker-color3 hover:border-dotted rounded-sm py-0.5 px-2 mr-4 mb-2">
+                并发 <sub>2</sub>
+              </a>
+              <br />
+            
+              <a href="https://hephesto0x01.github.io/tags/杂谈/" class="text-hacker-color3 hover:bg-hacker-hover-color hover:text-white block border border-hacker-color3 hover:border-dotted rounded-sm py-0.5 px-2 mr-4 mb-2">
+                杂谈 <sub>1</sub>
+              </a>
+              <br />
+            
+              <a href="https://hephesto0x01.github.io/tags/设计模式/" class="text-hacker-color3 hover:bg-hacker-hover-color hover:text-white block border border-hacker-color3 hover:border-dotted rounded-sm py-0.5 px-2 mr-4 mb-2">
+                设计模式 <sub>1</sub>
+              </a>
+              <br />
+            
+            
+          </div>
+          <hr class="w-full border-t-2 border-line-color border-dashed">
+        
+  
+        
+  
+      
+        
+  
+        
+  
+        
+  
+        
+  
+        
+          <!-- 链接部分 -->
+          <h3 class="text-hacker-color1 font-bold text-lg">Links</h3>
+          <div>
+            
+              <a href="https://www.baidu.com" target="_blank" class="text-hacker-color3 hover:text-white">
+                Baidu
+              </a>
+              <br />
+            
+          </div>
+          <hr class="w-full border-t-2 border-line-color border-dashed">
+        
+  
+      
+    </div>
+  
+  
+  
+  
+  
+
+
+
+
+
+
+    </div>
+    <footer class="bg-black text-gray-400 py-4">
+    <div class="container mx-auto text-center">
+      <p>© <span id="current-year"></span>  Hephesto 
+        <br> Powered by <a class="hover:text-white duration-150 hover:underline decoration-slice" target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & <a class="hover:text-white duration-150 hover:underline decoration-slice" target="_blank" rel="noopener" href="https://github.com/m310ct/hexo-theme-hexploit">Hexpolit</a></p>
+    </div>
+  </footer>
+  
+  <script> 
+    document.getElementById("current-year").textContent = new Date().getFullYear();
+  </script>
+  
+
+</body>
+</html>

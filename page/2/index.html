@@ -1,11 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hephesto - Archives</title>
-    <link rel="stylesheet" href="/css/styles.css">
-    <link rel="stylesheet" href="/css/tailwind.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hephesto</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/tailwind.css">
+  <!-- <link rel="stylesheet" href="/css/search.css"> -->
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body class="bg-black">
+  <!-- 顶部导航栏 -->
+  <div class="sticky top-0 z-50">
     
 <header class="bg-black text-hacker-white py-4 font-dos font-extrabold">
     <div class="container mx-auto flex items-center justify-between space-x-8">
@@ -133,33 +139,91 @@
   </script>
   
 
-<meta name="generator" content="Hexo 7.3.0"></head>
-<body class="bg-black container mx-auto">
-    <h1 class="text-4xl text-hacker-color1 font-bold font-dos">Archives</h1>
-    <hr class="w-full border-t-2 border-line-color border-dashed">
-    <div class="container mx-auto flex bg-black min-h-screen">
-        <div class="w-full">
-            
-
-            <div class="archive-list text-lg mt-8">
-            
-                <section class="mb-6">
-                <h2 class="text-2xl font-bold text-hacker-color1 mb-4">2025</h2>
-                <ul class="ml-4">
-                    
-                    <li class="mb-2">
-                        <span class="text-hacker-color3 ">2025-02-03 >> </span>
-                        <a class="text-hacker-color1 hover:underline" href="/2025/02/03/GO-%E6%B7%B1%E6%8B%B7%E8%B4%9D%E4%B8%8E%E6%B5%85%E6%8B%B7%E8%B4%9D/">[GO]深拷贝与浅拷贝</a>
-                    </li>
-                    
-                </ul>
-                </section>
-            
-            </div>
-
-
-        </div>
+  </div>
+  
+  <main class="w-screen min-h-screen container mx-auto">
+    <!-- 欢迎页面 -->
+    <div class="min-h-screen bg-black text-center flex flex-col justify-center items-center h-screen">
+        <h1 class="
+        text-hacker-color2 font-dos md:text-huge text-3xl text-wrap animate-bounce select-none bg-red-400 md:min-h-[5rem] md:leading-[5rem] 
+        bg-gradient-to-r from-hacker-color1 to-hacker-color2 bg-clip-text text-transparent md:-mt-80 -mt-40
+        ">Welcome to Hephesto&#39;s blog</h1>
+        <hr class="w-[85%] border-t-2 border-line-color border-dashed">
         
+        <p class="text-hacker-color2 md:mt-40 mt-20 md:text-2xl text-lg text-wrap font-dos w-[70%] select-none">Use it or Lose it</p>
+
+        <!-- 下拉按钮 -->
+        <svg id="down-btn" class="icon w-16 h-16 absolute top-[75%] hover:-translate-y-1 transition-all cursor-pointer" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" fill="#bbbbbb">
+          <path d="M185.884 327.55 146.3 367.133 512.021 732.779 877.7 367.133 838.117 327.55 511.997 653.676Z"></path>
+        </svg>
+    </div>
+
+    <!-- 博客文章与侧边栏 -->
+    <div class="min-h-screen flex gap-8" id="scr-target">
+      <!-- 文章部分 -->
+      <div class="w-full">
+        
+          <div class="post-item group border-b border-b-hacker-color3 ">
+            <a href="/2025/02/03/GO-make%E4%B8%8Enew/" class="block py-2 px-8 group-hover:bg-hacker-hover-color space-y-4">
+              <h2 class="post-title text-hacker-color1 group-hover:text-white font-bold text-2xl">
+                [GO]make与new
+              </h2>
+              <p class="post-meta text-hacker-color3 text-sm group-hover:text-white">
+                2025-02-03
+              </p>
+              <p class="post-excerpt text-hacker-color3 group-hover:text-white">
+                关键字var，make与new的用法与区别...
+              </p>
+            </a>
+          </div>
+        
+          <div class="post-item group border-b border-b-hacker-color3 ">
+            <a href="/2025/02/03/GO-%E6%B7%B1%E6%8B%B7%E8%B4%9D%E4%B8%8E%E6%B5%85%E6%8B%B7%E8%B4%9D/" class="block py-2 px-8 group-hover:bg-hacker-hover-color space-y-4">
+              <h2 class="post-title text-hacker-color1 group-hover:text-white font-bold text-2xl">
+                [GO]深拷贝与浅拷贝
+              </h2>
+              <p class="post-meta text-hacker-color3 text-sm group-hover:text-white">
+                2025-02-03
+              </p>
+              <p class="post-excerpt text-hacker-color3 group-hover:text-white">
+                深拷贝会拷贝数据（两变量存储地址不同，拷贝结束互不影响）。而浅拷贝只会拷贝内存的地址（即使拷贝结束，还是互相影响），所以就会出现，像 slice 那样修改底层数组的值，slice 的值也跟着改动。...
+              </p>
+            </a>
+          </div>
+        
+          <div class="post-item group border-b border-b-hacker-color3 ">
+            <a href="/2025/02/03/GO-%E7%9A%84%E7%94%A8%E6%B3%95/" class="block py-2 px-8 group-hover:bg-hacker-hover-color space-y-4">
+              <h2 class="post-title text-hacker-color1 group-hover:text-white font-bold text-2xl">
+                [GO]&#34;...&#34;的用法
+              </h2>
+              <p class="post-meta text-hacker-color3 text-sm group-hover:text-white">
+                2025-02-03
+              </p>
+              <p class="post-excerpt text-hacker-color3 group-hover:text-white">
+                在go语言中&#34;...&#34;用法在不同的地方有不同的意义...
+              </p>
+            </a>
+          </div>
+        
+          <div class="post-item group border-b border-b-hacker-color3 ">
+            <a href="/2025/01/29/hello-world/" class="block py-2 px-8 group-hover:bg-hacker-hover-color space-y-4">
+              <h2 class="post-title text-hacker-color1 group-hover:text-white font-bold text-2xl">
+                Hello World
+              </h2>
+              <p class="post-meta text-hacker-color3 text-sm group-hover:text-white">
+                2025-01-29
+              </p>
+              <p class="post-excerpt text-hacker-color3 group-hover:text-white">
+                hexo guidance...
+              </p>
+            </a>
+          </div>
+        
+      </div>
+      
+
+      <!-- 侧边部分 -->
+      
     <div class="w-1/3 hidden md:block space-y-4 mt-8">
       
         
@@ -293,7 +357,10 @@
 
 
     </div>
-    <footer class="bg-black text-gray-400 py-4">
+  </main>
+
+  <!-- 页脚 -->
+  <footer class="bg-black text-gray-400 py-4">
     <div class="container mx-auto text-center">
       <p>© <span id="current-year"></span>  Hephesto 
         <br> Powered by <a class="hover:text-white duration-150 hover:underline decoration-slice" target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> & <a class="hover:text-white duration-150 hover:underline decoration-slice" target="_blank" rel="noopener" href="https://github.com/m310ct/hexo-theme-hexploit">Hexpolit</a></p>
@@ -306,4 +373,6 @@
   
 
 </body>
+<script src="./js/scroll.js"></script>
+
 </html>
